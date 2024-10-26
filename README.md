@@ -1,2 +1,2 @@
 # vscode-manpage-syntax
-Syntax highlighting support for manpage authoring
+VS Code extension providing simple language support for manpage authoring.

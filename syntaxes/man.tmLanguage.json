@@ -1,0 +1,89 @@
+{
+	"name": "Manpage",
+	"scopeName": "text.manpage",
+	"fileTypes": ["man"],
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"uuid": "5c4af8f9-8c7e-4b6f-b1d5-1a9f5a0c4e1d",
+	"patterns": [
+	  {
+		"name": "markup.heading.manpage",
+		"match": "^\\.SH\\s+(.+)$",
+		"captures": {
+		  "1": {"name": "entity.name.section.manpage"}
+		}
+	  },
+	  {
+		"name": "markup.heading.subsection.manpage",
+		"match": "^\\.SS\\s+(.+)$",
+		"captures": {
+		  "1": {"name": "entity.name.subsection.manpage"}
+		}
+	  },
+	  {
+		"name": "markup.bold.manpage",
+		"match": "\\\\fB(.+?)\\\\fR"
+	  },
+	  {
+		"name": "markup.italic.manpage",
+		"match": "\\\\fI(.+?)\\\\fR"
+	  },
+	  {
+		"name": "constant.character.escape.manpage",
+		"match": "\\\\."
+	  },
+	  {
+		"name": "comment.line.manpage",
+		"match": "^.\\\\\".*$"
+	  },
+	  {
+		"name": "keyword.control.manpage",
+		"match": "^\\.(BR|IP|LP|PP|TP|TH)"
+	  },
+	  {
+		"name": "markup.bold.manpage",
+		"match": "^\\.(B|BI|CB)\\s+"
+	  },
+	  {
+		"name": "markup.italic.manpage",
+		"match": "^\\.(CI|I)\\s+"
+	  },
+	  {
+		"name": "markup.other.manpage",
+		"match": "^\\.(P|R)\\s+"
+	  },
+	  {
+		"name": "variable.parameter.manpage",
+		"match": "\\\\%[A-Za-z]"
+	  },
+	  {
+		"name": "constant.numeric.manpage",
+		"match": "\\d+"
+	  }
+	],
+	"repository": {
+	  "macros": {
+		"patterns": [
+		  {
+			"name": "entity.name.function.macro.manpage",
+			"match": "^\\.de\\s+(\\S+)"
+		  },
+		  {
+			"name": "variable.parameter.macro.manpage",
+			"match": "\\\\\\$[1-9]"
+		  }
+		]
+	  },
+	  "references": {
+		"patterns": [
+		  {
+			"name": "markup.underline.link.manpage",
+			"match": "([A-Za-z0-9_.-]+)\\(([1-9])\\)",
+			"captures": {
+			  "1": {"name": "entity.name.function.manpage"},
+			  "2": {"name": "constant.numeric.manpage"}
+			}
+		  }
+		]
+	  }
+	}
+  }

@@ -1,0 +1,25 @@
+{
+  "name": "vscode-man-syntax",
+  "displayName": "vscode-man-syntax",
+  "description": "Language support for manpages",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "man",
+      "aliases": ["Manpage", "man"],
+      "extensions": ["man"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "man",
+      "scopeName": "text.manpage",
+      "path": "./syntaxes/man.tmLanguage.json"
+    }]
+  }
+}
