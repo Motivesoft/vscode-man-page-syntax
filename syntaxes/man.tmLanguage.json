@@ -1,8 +1,20 @@
 {
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Manpage",
 	"scopeName": "text.manpage",
-	"fileTypes": ["man"],
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"fileTypes": [
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"8",
+		"9",
+		"man",
+		"mdoc"
+	  ],
 	"uuid": "5c4af8f9-8c7e-4b6f-b1d5-1a9f5a0c4e1d",
 	"patterns": [
 	  {

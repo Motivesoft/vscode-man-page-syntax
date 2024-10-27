@@ -1,19 +1,38 @@
 {
   "name": "vscode-man-syntax",
-  "displayName": "vscode-man-syntax",
-  "description": "Language support for manpages",
+  "displayName": "Man page syntax highlighting",
+  "description": "Language support for man pages",
   "version": "0.0.1",
+  "keywords": [
+    "man",
+    "mdoc"
+  ],
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
-    "Programming Languages"
+    "Other"
   ],
+  "license": "MIT",
+  "publisher": "Motivesoft",
+  "author": {
+    "name": "ianabrown",
+    "url": "https://github.com/ianabrown"
+  },
+  "homepage": "https://github.com/Motivesoft/vscode-manpage-syntax/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Motivesoft/vscode-manpage-syntax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Motivesoft/vscode-manpage-syntax/issues"
+  },
   "contributes": {
     "languages": [{
       "id": "man",
-      "aliases": ["Manpage", "man"],
-      "extensions": ["man"],
+      "aliases": ["Man page", "man", "manpage"],
+      "extensions": ["man", "mdoc", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
