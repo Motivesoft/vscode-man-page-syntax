@@ -1,6 +1,6 @@
 {
   "name": "vscode-man-page-syntax",
-  "displayName": "Man page syntax highlighting",
+  "displayName": "Man Page Syntax Highlighting",
   "description": "Language support for man pages",
   "version": "0.0.1",
   "keywords": [
