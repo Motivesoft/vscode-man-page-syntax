@@ -1,11 +1,12 @@
 {
-  "name": "vscode-man-syntax",
+  "name": "vscode-man-page-syntax",
   "displayName": "Man page syntax highlighting",
   "description": "Language support for man pages",
   "version": "0.0.1",
   "keywords": [
     "man",
-    "mdoc"
+    "mdoc",
+    "man page"
   ],
   "icon": "images/icon.png",
   "engines": {
@@ -20,13 +21,13 @@
     "name": "ianabrown",
     "url": "https://github.com/ianabrown"
   },
-  "homepage": "https://github.com/Motivesoft/vscode-manpage-syntax/blob/master/README.md",
+  "homepage": "https://github.com/Motivesoft/vscode-man-page-syntax/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Motivesoft/vscode-manpage-syntax.git"
+    "url": "https://github.com/Motivesoft/vscode-man-page-syntax.git"
   },
   "bugs": {
-    "url": "https://github.com/Motivesoft/vscode-manpage-syntax/issues"
+    "url": "https://github.com/Motivesoft/vscode-man-page-syntax/issues"
   },
   "contributes": {
     "languages": [{

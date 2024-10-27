@@ -1,4 +1,4 @@
-# vscode-manpage-syntax
+# Man Page Syntax
 VS Code extension providing simple language support for man page authoring, initially with syntax highlighting support.
 
 ## Features
