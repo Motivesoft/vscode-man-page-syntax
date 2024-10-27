@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "vscode-man-syntax" extension will be documented in this file.
+## [0.0.1]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Initial release, basic syntax highlighting
 
-## [Unreleased]
-
-- Initial release
+[0.0.1]: https://github.com/Motivesoft/vscode-manpage-syntax/releases/tag/v0.0.1
