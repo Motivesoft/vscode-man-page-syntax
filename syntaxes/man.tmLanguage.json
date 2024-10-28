@@ -37,7 +37,11 @@
 	  },
 	  {
 		"name": "comment.line.manpage",
-		"match": "^#(.*)$"
+		"match": "\\\"(.*)$"
+	  },
+	  {
+		"name": "comment.line.manpage",
+		"match": "#(.*)$"
 	  },
 	  {
 		"name": "markup.bold.manpage",

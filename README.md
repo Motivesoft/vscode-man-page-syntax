@@ -11,6 +11,10 @@ This is a very early release to gauge interest and __feedback is welcomed__ to a
 
 ## Release Notes
 
+### 0.0.2
+
+* Improved syntax highlighting
+
 ### 0.0.1
 
 * Initial release, basic syntax highlighting
