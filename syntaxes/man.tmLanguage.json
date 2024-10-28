@@ -32,6 +32,10 @@
 		}
 	  },
 	  {
+		"name": "keyword.control.manpage",
+		"match": "^\\.(RS|RE|EX|EE|TS|TE)"
+	  },
+	  {
 		"name": "comment.line.manpage",
 		"match": "^\\.\"(.*)$"
 	  },
