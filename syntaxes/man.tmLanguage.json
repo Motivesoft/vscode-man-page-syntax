@@ -61,7 +61,7 @@
 	  },
 	  {
 		"name": "keyword.control.manpage",
-		"match": "^\\.(BR|IP|LP|PP|TP|TH)"
+		"match": "^\\.(RB|BR|IP|LP|PP|TP|TH)"
 	  },
 	  {
 		"name": "markup.bold.manpage",
@@ -74,6 +74,10 @@
 	  {
 		"name": "markup.other.manpage",
 		"match": "^\\.(P|R)\\s+"
+	  },
+	  {
+		"name": "markup.inserted.manpage",
+		"match": "^\\.(nf|fi|sp|br)\\s+"
 	  },
 	  {
 		"name": "variable.parameter.manpage",
