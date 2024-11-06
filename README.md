@@ -34,6 +34,11 @@ __Feedback is welcomed__ to allow this extension to grow and improve. Use the [i
 
 ## Release Notes
 
+### 1.0.2
+
+- More code snippets
+- More auto complete
+
 ### 1.0.1
 
 - More code snippets
