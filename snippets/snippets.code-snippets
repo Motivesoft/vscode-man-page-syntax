@@ -2,6 +2,7 @@
     "Template Section 1 Page": {
         "scope": "man",
         "prefix": "man1",
+        "description": "Template for a section 1 (user or general command) man page",
         "body": [
             ".TH ${1:title} 1 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "",
@@ -22,6 +23,7 @@
     "Template Section 2 Page": {
         "scope": "man",
         "prefix": "man2",
+        "description": "Template for a section 2 (system calls) man page",
         "body": [
             ".TH ${1:title} 2 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "",
@@ -49,9 +51,39 @@
             "$12"
         ]
     },
+    "Template Section 3 Page": {
+        "scope": "man",
+        "prefix": "man3",
+        "description": "Template for a section 3 (library calls) man page",
+        "body": [
+            ".TH ${1:title} 3 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "",
+            ".SH NAME",
+            "$2",
+            ".SH LIBRARY",
+            "$3",
+            ".SH SYNOPSIS",
+            "$4",
+            ".SH DESCRIPTION",
+            "$5",
+            ".SH RETURN VALUE",
+            "$6",
+            ".SH ERRORS",
+            "$7",
+            ".SH ATTRIBUTES",
+            "$8",
+            ".SH VERSIONS",
+            "$9",
+            ".SH HISTORY",
+            "$10",
+            ".SH SEE ALSO",
+            "$11"
+        ]
+    },
     "Title Line": {
         "scope": "man",
         "prefix": ".th",
+        "description": "Template for a title heading with date inserted and prompts for other values",
         "body": [
             ".TH ${1:title} ${2:section} $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "$0"
@@ -60,14 +92,25 @@
     "Section Heading": {
         "scope": "man",
         "prefix": ".sh",
+        "description": "Template for a section heading with prompts for section name",
         "body": [
             ".SH ${1:heading}",
+            "$0"
+        ]
+    },
+    "Subsection Heading": {
+        "scope": "man",
+        "prefix": ".ss",
+        "description": "Template for a subsection heading with prompts for subsection name",
+        "body": [
+            ".SS ${1:heading}",
             "$0"
         ]
     },
     "Copyright": {
         "scope": "man",
         "prefix": ".copyright",
+        "description": "Template for a copyright statement with year, and prompts for other values",
         "body": [
             ".\\\" Copyright (c) $CURRENT_YEAR, ${1:name} ${2:email}",
             "$0"
