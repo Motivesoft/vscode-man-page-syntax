@@ -1,0 +1,56 @@
+{
+    "Template Section 1 Page": {
+        "scope": "man",
+        "prefix": "man1",
+        "body": [
+            ".\\\" Copyright (c) $CURRENT_YEAR, <author-name> <author-email>",
+            ".\\\"",
+            ".TH $1 1 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "",
+            ".SH NAME",
+            "$2",
+            ".SH SYNOPSIS",
+            "$3",
+            ".SH DESCRIPTION",
+            "$4",
+            ".SH OPTIONS",
+            "$5",
+            ".SH EXIT STATUS",
+            "$6",
+            ".SH SEE ALSO",
+            "$7"
+        ]
+    },
+    "Template Section 2 Page": {
+        "scope": "man",
+        "prefix": "man2",
+        "body": [
+            ".\\\" Copyright (c) $CURRENT_YEAR, <author-name> <author-email>",
+            ".\\\"",
+            ".TH $1 2 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "",
+            ".SH NAME",
+            "$2",
+            ".SH LIBRARY",
+            "$3",
+            ".SH SYNOPSIS",
+            "$4",
+            ".SH DESCRIPTION",
+            "$5",
+            ".SH RETURN VALUE",
+            "$6",
+            ".SH ERRORS",
+            "$7",
+            ".SH ATTRIBUTES",
+            "$8",
+            ".SH VERSIONS",
+            "$9",
+            ".SH STANDARDS",
+            "$10",
+            ".SH HISTORY",
+            "$11",
+            ".SH SEE ALSO",
+            "$12"
+        ]
+    },
+}
