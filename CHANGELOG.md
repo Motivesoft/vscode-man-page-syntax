@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.1]
+
+- More code snippets
+- More auto complete
+
 ## [1.0.0]
 
 - Improved syntax highlighting
@@ -14,6 +19,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.0.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.1
 [1.0.0]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.0
 [0.0.2]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v0.0.2
 [0.0.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v0.0.1

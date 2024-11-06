@@ -3,9 +3,7 @@
         "scope": "man",
         "prefix": "man1",
         "body": [
-            ".\\\" Copyright (c) $CURRENT_YEAR, <author-name> <author-email>",
-            ".\\\"",
-            ".TH $1 1 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            ".TH ${1:title} 1 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "",
             ".SH NAME",
             "$2",
@@ -25,9 +23,7 @@
         "scope": "man",
         "prefix": "man2",
         "body": [
-            ".\\\" Copyright (c) $CURRENT_YEAR, <author-name> <author-email>",
-            ".\\\"",
-            ".TH $1 2 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            ".TH ${1:title} 2 $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
             "",
             ".SH NAME",
             "$2",
@@ -53,4 +49,28 @@
             "$12"
         ]
     },
+    "Title Line": {
+        "scope": "man",
+        "prefix": ".th",
+        "body": [
+            ".TH ${1:title} ${2:section} $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "$0"
+        ]
+    },
+    "Section Heading": {
+        "scope": "man",
+        "prefix": ".sh",
+        "body": [
+            ".SH ${1:heading}",
+            "$0"
+        ]
+    },
+    "Copyright": {
+        "scope": "man",
+        "prefix": ".copyright",
+        "body": [
+            ".\\\" Copyright (c) $CURRENT_YEAR, ${1:name} ${2:email}",
+            "$0"
+        ]
+    }
 }

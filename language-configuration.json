@@ -17,6 +17,8 @@
         //["\"", "\""], Remove this as it interferes with the .\" line comment
         ["\"", "\""],
         ["'", "'"],
+        [".RS","\n.RE"],
+        [".in ","\n.in"],
         [".nf","\n.fi"]
     ],
     // symbols that can be used to surround a selection

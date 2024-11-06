@@ -17,6 +17,11 @@ Code snippets are used to provide some standard layouts for section headers for 
 
 When creating a new man page, make sure the `Man Page` language mode is selected and then type `man` into the editor (or `man` followed by the number of the section page being created). A list of the available page templates will be displayed. Select the relevant one for the page being created - for example, `man1` is a code snippet that provides a template layout for a section 1 man page (user command). 
 
+The following special snippets can also be used:
+- `.copyright` - inserts a copyright comment and prompts to complete
+- `.th` - inserts a title heading with date and prompts to complete 
+- `.sh` - inserts a section heading with prompt to complete
+
 ### Auto Complete
 Certain man formatting commands require a start and end instruction, such as the `.nf`/`.fi` pair.
 
@@ -28,6 +33,11 @@ None at this time, but there may be some items not being highlighted and more st
 __Feedback is welcomed__ to allow this extension to grow and improve. Use the [issues](https://github.com/Motivesoft/vscode-man-page-syntax/issues) page for requests or to report bugs.
 
 ## Release Notes
+
+### 1.0.1
+
+- More code snippets
+- More auto complete
 
 ### 1.0.0
 
