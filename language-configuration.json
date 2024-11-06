@@ -17,8 +17,14 @@
         //["\"", "\""], Remove this as it interferes with the .\" line comment
         ["\"", "\""],
         ["'", "'"],
+        [".EX","\n.EE"],
+        [".MT","\n.ME"],
         [".RS","\n.RE"],
-        [".in ","\n.in"],
+        [".TS","\n.TE"],
+        [".UR","\n.UE"],
+        [".ad l",".ad"],    // No newline here as the user will want to enter more stuff on the first line
+        [".in ",".in"],     // No newline here as the user will want to enter more stuff on the first line
+        [".nh","\n.hy"],
         [".nf","\n.fi"]
     ],
     // symbols that can be used to surround a selection
