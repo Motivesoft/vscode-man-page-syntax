@@ -33,7 +33,7 @@
     "languages": [{
       "id": "man",
       "aliases": ["Man Page", "man", "manpage"],
-      "extensions": ["man", "mdoc", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "extensions": [".man", ".mdoc", ".1", ".2", ".3", ".4", ".5", ".6", ".7", ".8", ".9"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
