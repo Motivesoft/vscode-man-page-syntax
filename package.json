@@ -2,7 +2,7 @@
   "name": "vscode-man-page-syntax",
   "displayName": "Man Page Syntax Highlighting",
   "description": "Language support for man pages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "man",
     "mdoc",
