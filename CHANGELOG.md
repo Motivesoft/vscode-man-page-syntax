@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.5]
+
+- When in a plaintext editor, attempt to interpret pasted or typed input as 'man' syntax and switch the editor to Man Page
+
 ## [1.0.4]
 
 - Address an issue with new files being automatically set as man pages, instead of plain text
@@ -28,6 +32,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.0.5]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.5
 [1.0.4]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.4
 [1.0.2]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.2
 [1.0.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.1
