@@ -2,7 +2,7 @@
   "name": "vscode-man-page-syntax",
   "displayName": "Man Page Syntax Highlighting",
   "description": "Language support for man pages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "man",
     "mdoc",
@@ -30,21 +30,42 @@
     "url": "https://github.com/Motivesoft/vscode-man-page-syntax/issues"
   },
   "contributes": {
-    "languages": [{
-      "id": "man",
-      "aliases": ["Man Page", "man", "manpage"],
-      "extensions": [".man", ".mdoc", ".1", ".2", ".3", ".4", ".5", ".6", ".7", ".8", ".9"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "man",
-      "scopeName": "text.manpage",
-      "path": "./syntaxes/man.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "man",
+        "aliases": [
+          "Man Page",
+          "man",
+          "manpage"
+        ],
+        "extensions": [
+          ".man",
+          ".mdoc",
+          ".1",
+          ".2",
+          ".3",
+          ".4",
+          ".5",
+          ".6",
+          ".7",
+          ".8",
+          ".9"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "man",
+        "scopeName": "text.manpage",
+        "path": "./syntaxes/man.tmLanguage.json"
+      }
+    ],
     "snippets": [
-    {
-      "language": "man",
-      "path": "./snippets/snippets.code-snippets"
-    }]
+      {
+        "language": "man",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
   }
 }
