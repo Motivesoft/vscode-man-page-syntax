@@ -34,6 +34,10 @@ __Feedback is welcomed__ to allow this extension to grow and improve. Use the [i
 
 ## Release Notes
 
+### 1.0.4
+
+- Address an issue with new files being automatically set as man pages, instead of plain text
+
 ### 1.0.2
 
 - More code snippets
