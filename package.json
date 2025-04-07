@@ -10,7 +10,7 @@
   ],
   "icon": "images/icon.png",
   "engines": {
-    "vscode": "^1.94.0"
+    "vscode": "^1.99.0"
   },
   "categories": [
     "Other"
@@ -29,6 +29,7 @@
   "bugs": {
     "url": "https://github.com/Motivesoft/vscode-man-page-syntax/issues"
   },
+  "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
@@ -66,6 +67,32 @@
         "language": "man",
         "path": "./snippets/snippets.code-snippets"
       }
-    ]
+    ],
+    "configuration": {
+      "files.associations": {
+        "*.man": "man",
+        "*.mdoc": "man",
+        "*.1": "man",
+        "*.2": "man",
+        "*.3": "man",
+        "*.4": "man",
+        "*.5": "man",
+        "*.6": "man",
+        "*.7": "man",
+        "*.8": "man",
+        "*.9": "man"
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "esbuild": "^0.25.2",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.8.3"
   }
 }

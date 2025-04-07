@@ -19,7 +19,7 @@
 	"patterns": [
 	  {
 		"name": "markup.heading.manpage",
-		"match": "^\\.SH\\s+(.+)$",
+		"match": "^\\.(SH|TH)\\s+(.+)$",
 		"captures": {
 		  "1": {"name": "entity.name.section.manpage"}
 		}
@@ -65,7 +65,7 @@
 	  },
 	  {
 		"name": "keyword.control.manpage",
-		"match": "^\\.(RB|BR|IP|LP|PP|TP|TH)"
+		"match": "^\\.(RB|BR|IP|LP|PP|TP)"
 	  },
 	  {
 		"name": "markup.bold.manpage",
