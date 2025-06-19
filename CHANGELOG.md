@@ -1,6 +1,6 @@
 # Change Log
 
-### [1.1.0]
+## [1.1.0]
 
 - Reimplemented to overcome deployment issues on Codium
 
