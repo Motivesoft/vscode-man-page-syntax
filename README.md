@@ -34,6 +34,10 @@ __Feedback is welcomed__ to allow this extension to grow and improve. Use the [i
 
 ## Release Notes
 
+### 1.1.0
+
+- Reimplemented to overcome deployment issues on Codium
+
 ### 1.0.5
 
 - When in a plaintext editor, attempt to interpret pasted or typed input as 'man' syntax and switch the editor to Man Page

@@ -14,13 +14,11 @@ function isManPage(content: string): boolean {
     let matchCount = 0;
     let result = false;
 
-    console.log("---");
     for (let index = 0; index < MAN_PAGE_PATTERNS.length; index++) {
         if (MAN_PAGE_PATTERNS[index].test(content)) {
-            console.log(MAN_PAGE_PATTERNS[index]);
             matchCount++;
 
-            if (matchCount >= 2) {
+			if (matchCount >= 2) {
                 result = true;
                 break;
             }
@@ -31,6 +29,7 @@ function isManPage(content: string): boolean {
 }
 
 export function activate(context: vscode.ExtensionContext) {
+	console.log("act");
     // When the document changes, see if it is looking like a man page
     vscode.workspace.onDidChangeTextDocument(event => {
         const editor = vscode.window.activeTextEditor;
@@ -41,7 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        const text = editor.document.getText();
+		const text = editor.document.getText();
         if (isManPage(text)) {
             vscode.languages.setTextDocumentLanguage(editor.document, 'man');
         }

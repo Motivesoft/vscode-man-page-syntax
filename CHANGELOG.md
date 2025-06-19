@@ -1,5 +1,9 @@
 # Change Log
 
+### [1.1.0]
+
+- Reimplemented to overcome deployment issues on Codium
+
 ## [1.0.5]
 
 - When in a plaintext editor, attempt to interpret pasted or typed input as 'man' syntax and switch the editor to Man Page
@@ -32,6 +36,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.1.0]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.0
 [1.0.5]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.5
 [1.0.4]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.4
 [1.0.2]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.2
