@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.1.1]
+
+- Activate extension automatically
+
 ## [1.1.0]
 
 - Reimplemented to overcome deployment issues on Codium
@@ -36,6 +40,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.1.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.1
 [1.1.0]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.0
 [1.0.5]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.5
 [1.0.4]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.4

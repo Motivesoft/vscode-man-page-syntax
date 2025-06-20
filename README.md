@@ -34,6 +34,10 @@ __Feedback is welcomed__ to allow this extension to grow and improve. Use the [i
 
 ## Release Notes
 
+### 1.1.1
+
+- Activate extension automatically
+
 ### 1.1.0
 
 - Reimplemented to overcome deployment issues on Codium

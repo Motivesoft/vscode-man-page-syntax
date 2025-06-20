@@ -2,7 +2,7 @@
   "name": "vscode-man-page-syntax",
   "displayName": "Man Page Syntax Highlighting",
   "description": "Language support for man pages",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "man",
     "mdoc",
@@ -29,7 +29,9 @@
   "bugs": {
     "url": "https://github.com/Motivesoft/vscode-man-page-syntax/issues"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [
