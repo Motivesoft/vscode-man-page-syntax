@@ -29,20 +29,35 @@ function isManPage(content: string): boolean {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log("act");
+    // Whether to monitor document changes (edit, paste, ...) on plaintext documents to automatically
+    // identify them as man page documents.
+    // Read the setting on activation and then monitor for setting changes to update this flag
+    let automaticDetection = vscode.workspace.getConfiguration('vscode-man-page-syntax').get('automaticDetection');
+
+    vscode.workspace.onDidChangeConfiguration(event => {
+        if (event.affectsConfiguration('vscode-man-page-syntax.automaticDetection')) {
+            automaticDetection = vscode.workspace.getConfiguration('vscode-man-page-syntax').get('automaticDetection');
+        }
+    });
+
     // When the document changes, see if it is looking like a man page
     vscode.workspace.onDidChangeTextDocument(event => {
-        const editor = vscode.window.activeTextEditor;
-        
-        // Only perform the test while the document is plaintext. Once something has been chosen,
-        // assume it is correct and can only be changed by the user
-        if (!editor || editor.document.languageId !== 'plaintext') {
-            return;
-        }
-
-		const text = editor.document.getText();
-        if (isManPage(text)) {
-            vscode.languages.setTextDocumentLanguage(editor.document, 'man');
+        // Check whether we should we be looking for relevant edits
+        if (automaticDetection) {
+            const editor = vscode.window.activeTextEditor;
+            
+            // Only perform the test while the document is plaintext. Once something different has been chosen,
+            // assume it is correct and can only be changed by the user
+            if (!editor || editor.document.languageId !== 'plaintext') {
+                return;
+            }
+    
+            // Scan the document for whether it looks like a man page
+            const text = editor.document.getText();
+            if (isManPage(text)) {
+                // Set the document type
+                vscode.languages.setTextDocumentLanguage(editor.document, 'man');
+            }
         }
     });
 }

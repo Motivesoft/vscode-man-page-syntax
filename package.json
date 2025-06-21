@@ -2,7 +2,7 @@
   "name": "vscode-man-page-syntax",
   "displayName": "Man Page Syntax Highlighting",
   "description": "Language support for man pages",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "keywords": [
     "man",
     "mdoc",
@@ -71,7 +71,7 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ],
-    "configuration": {
+    "configuration": [ {
       "files.associations": {
         "*.man": "man",
         "*.mdoc": "man",
@@ -85,7 +85,16 @@
         "*.8": "man",
         "*.9": "man"
       }
-    }
+    }, {
+        "title": "Man Page Syntax Highlighting",
+        "properties": {
+          "vscode-man-page-syntax.automaticDetection": {
+            "type": "boolean",
+            "default": true,
+            "description": "Monitor changes to plain text documents to automatically identify them as man pages."
+          }
+        }
+    } ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",

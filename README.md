@@ -9,6 +9,7 @@ The language mode provides:
 - Syntax highlighting
 - Code snippets to create default page layouts with expected section headers
 - Auto complete on some formatting instructions (e.g. `.nf`)
+- Monitoring of edits to plaintext documents to automatically select the 'Man Page' language mode (configurable) 
 
 ### Code Snippets
 When creating a new page, it is important to maintain consistency with standard man page layouts.
@@ -27,12 +28,22 @@ Certain man formatting commands require a start and end instruction, such as the
 
 When using the Man Page language mode, typing the starting of one of these (e.g. `.nf`) will automatically insert the corresponding ending (e.g. `.fi`), either on the same or next line as appropriate.
 
+## Extension Settings
+
+| Setting | Type | Default | Description |
+|---------|------|---------|-------------|
+| `vscode-man-page-syntax.automaticDetection` | boolean | true | Monitor changes to plain text documents to automatically identify them as man pages. |
+
 ## Known Issues
 None at this time, but there may be some items not being highlighted and more standard page templates that could be presented as code snippets.
 
 __Feedback is welcomed__ to allow this extension to grow and improve. Use the [issues](https://github.com/Motivesoft/vscode-man-page-syntax/issues) page for requests or to report bugs.
 
 ## Release Notes
+
+### 1.1.2
+
+- Make automatic document type detection configurable
 
 ### 1.1.1
 

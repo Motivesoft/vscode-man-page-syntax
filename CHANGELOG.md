@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.1.2]
+
+- Make automatic document type detection configurable
+
 ## [1.1.1]
 
 - Activate extension automatically
@@ -40,6 +44,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.1.2]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.2
 [1.1.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.1
 [1.1.0]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.0
 [1.0.5]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.0.5
