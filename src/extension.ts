@@ -2,7 +2,9 @@ import * as vscode from 'vscode';
 
 const MAN_PAGE_PATTERNS = [
     /^\.TH\s+[a-zA-Z]+\s+\d+/m,     // .TH TITLE SECTION (ideally should be uppercase, but often isn't)
-    /^\.SH\s+[A-Z]+/m,              // Section headers (NAME, SYNOPSIS)
+    /^\.S[Hh]\s+([A-Za-z ]+)/m,
+    /^\.S[Hh]\s+(NAME|SYNOPSIS|DESCRIPTION|EXAMPLES|SEE ALSO|OPTIONS|EXIT STATUS|RETURN VALUE|ENVIRONMENT|FILES|AUTHOR|BUGS|HISTORY|COPYRIGHT)\s*$/m,
+    /^\.(Sh|Ss|Pp|Bl|El|It|Dd|Dt|Os|Nm|Nd|Sx|Xr|Bd|Ed|D1|Dl|Ta)\b/m,    // mDoc
     /^\.B\s+[^\n]+/m,               // Bold text
     /^\.IP\s+\\fB[^\n]+\\fR/m,      // Indented paragraphs
     /^\.\\"[\s\S]*?$/m              // Comments
