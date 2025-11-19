@@ -41,6 +41,10 @@ __Feedback is welcomed__ to allow this extension to grow and improve. Use the [i
 
 ## Release Notes
 
+### 1.1.4
+
+- Update dependencies
+
 ### 1.1.3
 
 - Improve mdoc file type detection when pasting contents into a plaintext file

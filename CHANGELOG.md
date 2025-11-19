@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.1.4]
+
+- Update dependencies
+
 ## [1.1.3]
 
 - Improve mdoc file type detection when pasting contents into a plaintext file
@@ -48,6 +52,7 @@
 
 - Initial release, basic syntax highlighting
 
+[1.1.4]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.4
 [1.1.3]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.3
 [1.1.2]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.2
 [1.1.1]: https://github.com/Motivesoft/vscode-man-page-syntax/releases/tag/v1.1.1
